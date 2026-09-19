@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HeartLink — Dating</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand">♥ HeartLink</div><button id="joinTop">Join free</button></header>
+<main>
+<section class="hero">
+  <div>
+    <span class="pill">Meet people. Make connections.</span>
+    <h1>Find someone who feels like home.</h1>
+    <p>Create a profile, discover people you like, and start a conversation.</p>
+    <button class="primary" id="joinHero">Create your profile</button>
+  </div>
+  <div class="hero-card"><div class="heart">♥</div><h3>Real connections</h3><p>Simple profiles and friendly matching.</p></div>
+</section>
+
+<section id="discover" class="section">
+  <div class="section-head"><h2>Discover people</h2><span id="count"></span></div>
+  <div id="cards" class="grid"></div>
+</section>
+
+<section class="section signup" id="signup">
+  <h2>Join HeartLink</h2>
+  <p>Make a profile to appear in the community.</p>
+  <form id="profileForm">
+    <input id="name" required placeholder="Your name">
+    <input id="age" required type="number" min="18" max="100" placeholder="Age (18+)">
+    <input id="city" required placeholder="City / country">
+    <textarea id="bio" required placeholder="Tell people a little about yourself"></textarea>
+    <button class="primary">Create profile</button>
+  </form>
+  <p id="formMsg" class="msg"></p>
+</section>
+</main>
+<footer>© 2026 HeartLink · Be respectful. Stay safe.</footer>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
